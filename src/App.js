@@ -13,7 +13,6 @@ import datalist from './DataList/datalist';
 import Home from './HomePage/Home';
 import Cart from './Cart/Cart';
 import ProductInfo from './ProductInfo/ProductInfo';
-
 function App() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [generatedOtp, setGeneratedOtp] = useState('');
@@ -40,6 +39,7 @@ function App() {
         <Route path="Home" element={<Home/>}/>
         <Route path="Cart" element={<Cart/>}/>
         <Route path="/Product-Info/:id" element={<ProductInfo />} />
+    
 
 
       </Routes>

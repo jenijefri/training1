@@ -79,7 +79,7 @@ export default function Product() {
       [itemId]: !wishList[itemId] ? 'Item added to wishlist' : 'Item removed from wishlist',
     }));
 
-    // Clear the alert message after 3 seconds
+    
     setTimeout(() => {
       setAlertMessages((prevMessages) => {
         const updatedMessages = { ...prevMessages };
