@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
   }
-  /* using because of bootstrap cdn adding  addition bottom padding and margin margin pixels to links */
+
   .nav-links {
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -34,9 +34,7 @@
   .nav-bar {
     justify-content: space-between;
     padding:3px;
-   /* padding: 10px 25px 10px 25px;*/
     background-color: #282c34;
-   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;*/
     position: fixed;
    top: 0;
     z-index: 99;

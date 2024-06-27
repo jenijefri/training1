@@ -16,10 +16,8 @@ function PhoneNumberInput({ setPhoneNumber, setGeneratedOtp }) {
       return;
     }
     const otp = generateOtp();
-    setGeneratedOtp(otp); // Call setGeneratedOtp to set the generated OTP
+    setGeneratedOtp(otp); 
     setPhoneNumber(phone);
-    // You can add API call to send OTP here
-    console.log('Generated OTP:', otp); // For demonstration purposes
     navigate('/otp');
   };
 

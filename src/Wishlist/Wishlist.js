@@ -12,16 +12,16 @@ const Wishlist = () => {
   }, []);
 
   const removeFromWishlist = (itemId) => {
-    // Update the wishlist by removing the item with the specified ID
+    
     const updatedWishlist = { ...wishlist };
     delete updatedWishlist[itemId];
     setWishlist(updatedWishlist);
 
-    // Update local storage with the new wishlist
+    
     localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
     setAlertMessage('Item removed from wishlist');
 
-    // Clear the alert message after 3 seconds
+    
     setTimeout(() => {
       setAlertMessage('');
     }, 3000);
@@ -63,7 +63,7 @@ const Wishlist = () => {
               />
               <div style={{ textAlign: 'center' }}>
                 <span>{item.title}</span>
-                {/* Add other details as needed */}
+              
               </div>
               <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
                 <Link to={`/Product-Info/${item.id}`}>

@@ -62,14 +62,13 @@ export default function Product() {
     setWishList((prevWishlist) => {
       const updatedWishlist = { ...prevWishlist };
 
-      // Toggle item in the wishlist
+    
       if (!updatedWishlist[itemId]) {
         updatedWishlist[itemId] = { ...item };
       } else {
         delete updatedWishlist[itemId];
       }
 
-      // Update local storage with the new wishlist
       localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
 
       return updatedWishlist;

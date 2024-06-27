@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="nav-bar">
       <div className="left-nav-section">
           <img
-           src="https://cdn-icons-png.flaticon.com/512/263/263142.png" // Use a direct URL to the shopping cart logo image here
+           src="https://cdn-icons-png.flaticon.com/512/263/263142.png" 
           alt="Shopping Cart"
           className="mylogo"
           />

@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaLock, RiAdvertisementFill, FaGift, IoMdHelpCircle, FaFacebookSquare } from "react-icons/fa";
-import datalist from '../DataList/datalist'; // Adjusted import assuming 'DataBase' is the correct directory name
+import datalist from '../DataList/datalist'; 
 
 const Home = () => {
   const [dataDisplay, setDataDisplay] = useState([]);
@@ -36,7 +36,6 @@ const Home = () => {
       <Navbar />
 
       <div className="category">
-        {/* Your category items JSX */}
       </div>
 
       <Carousel indicators={false} className="carousel" interval={3000}>
@@ -86,7 +85,7 @@ const Home = () => {
       </div>
 
       <footer className="footer">
-        {/* Your footer content JSX */}
+      
       </footer>
     </>
   );

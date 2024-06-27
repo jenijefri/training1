@@ -11,13 +11,8 @@ const Order = () => {
   const [cancelorder, setCancelOrder] = useState("");
 
   const handleCancelOrder = (index) => {
-    // Create a copy of the orders array
     const updatedOrders = [...orders];
-
-    // Remove the selected order at the given index
     updatedOrders.splice(index, 1);
-
-    // Update the state and local storage
     setOrders(updatedOrders);
     localStorage.setItem("orders", JSON.stringify(updatedOrders));
     setCancelOrder("Order cancelled");

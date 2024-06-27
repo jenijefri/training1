@@ -15,9 +15,7 @@ const validatePassword = (password) => {
 const handleSubmit = (e) => {
   e.preventDefault();
   if (validatePassword(password)) {
-    // Implement password save logic here
-    console.log('Password Created:', password);
-    navigate('/Home'); // Redirect to the dashboard
+    navigate('/Home'); 
   } else {
     alert('Password must be at least 8 characters long and include both uppercase and lowercase letters.');
   }

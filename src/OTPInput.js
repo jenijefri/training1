@@ -6,7 +6,6 @@ function OTPInput({ phoneNumber, generatedOtp, setOtp }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log('Generated OTP:', generatedOtp); // For demonstration purposes
   }, [generatedOtp]);
 
   const handleSubmit = (e) => {
